@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Web Design</title>
 </head>
 
@@ -15,16 +18,74 @@
         </div>
         <nav class="navbar">
             <a href="home.html"><button type="button">Home</button></a>
-            <a href="for-you.html"><button type="button">For You</button></a>
-            <a href="about-quikdy.html"><button type="button">About Quikdy</button></a>
-            <a href="products-services.html"><button type="button">Products & Services</button></a>
+            <div class="dropdown">
+                <button class="dropbtn">For You <i class="fa fa-angle-down"></i></button>
+                <div class="dropdown-content">
+                    <a href="for-you.html">For You 1</a>
+                    <a href="#">For You 2</a>
+                    <a href="#">For You 3</a>
+                </div>
+            </div>
+            
+            <div class="dropdown">
+                <button class="dropbtn">About Quikdy <i class="fa fa-angle-down"></i></button>
+                <div class="dropdown-content">
+                    <a href="about-quikdy.html">About Quikdy 1</a>
+                    <a href="#">About Quikdy 2</a>
+                    <a href="#">About Quikdy 3</a>
+                </div>
+            </div>
+            
+            <div class="dropdown">
+                <button class="dropbtn">Products & Services <i class="fa fa-angle-down"></i></button>
+                <div class="dropdown-content">
+                    <a href="products-services.html">Products & Services 1</a>
+                    <a href="#">Products & Services 2</a>
+                    <a href="#">Products & Services 3</a>
+                </div>
+            </div>
+            
             <a href="careers.html"><button type="button">Careers</button></a>
-            <a href="insights.html"><button type="button">Insights</button></a>
+
+            <div class="dropdown">
+            <button class="dropbtn">Insights <i class="fa fa-angle-down"></i></button>
+                <div class="dropdown-content">
+                    <a href="Insights.html">Item 1</a>
+                    <a href="#">Item 2</a>
+                    <a href="#">Item 3</a>
+                </div>
         </nav>
         <div class="login">
             <button type="button">Login</button>
         </div>
     </header>
+
+    <div class="content">
+        <div class="text">
+            <h1>CareerConnect</h1>
+            <h1>Your Gateway to Opportunities</h1>
+            <p>Unlock Your Potential with Our Diverse Job Listings. Find Your Dream Job Today and Take the Next Step in
+                Your Professional Journey. Join Us on the Path to Success!</p>
+            <button type="button">Explore more</button>
+        </div>
+        <img src="image (2).png" alt="Career Image">
+        <div class="box">
+            <button class="button1" type="button"></button>
+            <button class="button2" type="button"></button>
+            <button class="button3" type="button"></button>
+        </div>
+
+        <div class="search">
+            <input type="search" placeholder="Company">
+            <input type="search" placeholder="Job Title">
+            <select>
+                <option value="" disabled selected>Select City</option>
+                <option value="city1">City 1</option>
+                <option value="city2">City 2</option>
+            </select>
+            <button class="searchbutton" type="button">Search</button>
+        </div>
+    </div>
 </body>
 
 </html>
